@@ -60,7 +60,7 @@ services:
     environment:
       MYSQL_DATABASE: marzban
     volumes:
-      - /var/lib/mysql/marzban:/var/lib/mysql
+      - /var/lib/marzban/mysql:/var/lib/mysql
 ```
 :::
 
@@ -89,7 +89,7 @@ services:
     environment:
       MYSQL_DATABASE: marzban
     volumes:
-      - /var/lib/mysql/marzban:/var/lib/mysql
+      - /var/lib/marzban/mysql:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
@@ -253,7 +253,7 @@ services:
     environment:
       MYSQL_DATABASE: marzban
     volumes:
-      - /var/lib/mysql/marzban:/var/lib/mysql
+      - /var/lib/marzban/mysql:/var/lib/mysql
 
   phpmyadmin:
     image: arm64v8/phpmyadmin:latest
